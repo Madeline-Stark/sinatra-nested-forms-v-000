@@ -4,7 +4,7 @@ module FormsLab
   class App < Sinatra::Base
 
     get '/' do
-      erb :'pirates/index' #default just looks in views
+      erb :'pirates/index' #if do /index then default just looks in views
     end
 
     get '/new' do
