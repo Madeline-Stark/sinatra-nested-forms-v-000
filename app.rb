@@ -11,17 +11,6 @@ module FormsLab
       erb :'pirates/new'
     end
 
-    #get '/pirates' do
-      #@pirates = Pirate.all
-      #erb :'pirates/new'
-      #gives all the pirates
-    #end
-
-    #for single pirate:
-      #get '/pirates/:id' do
-
-      #end
-
     post '/pirates' do
       @pirate = Pirate.new(params[:pirate]) #storing in variable gives show.erb something to call .name and other methods on
 
